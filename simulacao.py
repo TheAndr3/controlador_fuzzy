@@ -1,6 +1,8 @@
 import os
+import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
+matplotlib.use('Agg')  # Usar backend 'Agg' para evitar problemas em ambientes sem display
 from controlador import (
     TriangularMF,
     TrapezoidalMF,
