@@ -20,8 +20,7 @@ def criar_sistema_fuzzy() -> ControladorFuzzy:
     t_var.adicionar_termo("baixa", TrapezoidalMF(800.0, 800.0, 900.0, 1000.0))
     t_var.adicionar_termo("media", TriangularMF(900.0, 1000.0, 1100.0))
     t_var.adicionar_termo("alta", TrapezoidalMF(1000.0, 1100.0, 1200.0, 1200.0))
-    controlador.adicionar_variable_entrada = t_var # Wait, we have a method adicionar_variavel_entrada in controlador.py
-    # let's double check if we call the correct method
+    controlador.adicionar_variable_entrada = t_var 
     controlador.adicionar_variavel_entrada(t_var)
 
     # Volume: 2 a 12 m³

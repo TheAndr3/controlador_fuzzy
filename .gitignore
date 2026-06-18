@@ -3,3 +3,5 @@ __pycache__/
 docs/
 context.md
 escopo_projeto.md
+.venv/
+*.pyc
